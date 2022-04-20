@@ -3,76 +3,174 @@
   <head>
     <meta charset="UTF-8">
     <title>Patrick Mwangi | Software Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
                 
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
-    <!-- nav menu -->
-    <nav>
-      <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#Work">Work</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+           
+          </ul>
+          <div class="d-flex">
+            <a href="tel:0741761232"><span tel="0741761232">(+254) 0741761232</span></a>    
+          </div>
+          
+        </div>
+      </div>
     </nav>
     <!-- page header -->
-    <header id="Home">
-      <h1>Hi! I'm <span>Patrick Mwangi</span>.</h1>
-      <h2>I'm a Software developer who takes much delight in building the best, unique and custom software solutions.</h2>
-    </header>
+    <div class="row" id="Home">
+      <div class="col-md-6 header">
+          <h1>Hi! I'm <span>Patrick Mwangi</span>.</h1>
+          <h2>I'm a Software developer who takes much delight in building the best, unique and custom software solutions.</h2>
+      </div>
+      <div class="col-md-6">
+          <div class="container-fluid contactme">
+            <h1>Get in Touch</h1>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Phone</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="0722000000">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-primary float-end">Send</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    
     <!-- about me section -->
-    <section class="about container">
-      <h2 id="About">About</h2>
-      <img class="profile-img" src="images/profile.png" alt="Patrick Mwangi">
-      <p>I have good Programming skills mainly in Php, JavaScript, jQuery, CSS, HTML, C++, React, Angular, Python and MySQL. I have commendable skills and experience in Laravel and WordPress CMS. I have also extensive knowledge in SEO principles, google analytics, Figma design and UI/ UX principles. I understand software project management in depth and the entire software development process including design, development and deployment.</p>
-    </section>
+    <div class="about" id="About">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="profile-img" src="images/profile.png" alt="Patrick Mwangi"><br>
+          </div>
+          <div class="col-md-12">
+            <p class="aboutparagraph">I have good Programming skills mainly in Php, JavaScript, jQuery, CSS, HTML, C++, React, Angular, Python and MySQL. I have commendable skills and experience in Laravel and WordPress CMS. I have also extensive knowledge in SEO principles, google analytics, Figma design and UI/ UX principles. I understand software project management in depth and the entire software development process including design, development and deployment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- my skills section -->
-    <section id="Skills" class="skills container">
-      <h2>Skills</h2>
-      <ul>
-        <li>Tailwind CSS</li>
-        <li>Alpine JS</li>
-        <li>Laravel</li>
-        <li>Livewire</li>
-      </ul>
-      <ul>
-        <li>JavaScript</li>
-        <li>jQuery</li>
-        <li>React</li>
-        <li>Angular</li>
-      </ul>
-      <ul>
-        <li>PHP</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>MySQL</li>
-      </ul>
-    </section>
+    <div class="container" id="Skills">
+      <div class="row">
+        <div class="col-md-3">
+            <p>Tailwind CSS</p>
+        </div>
+        <div class="col-md-3">
+            <p>Alpine JS</p>
+        </div>
+        <div class="col-md-3">
+            <p>Laravel</p>
+        </div>
+        <div class="col-md-3">
+            <p>Livewire</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <p>PHP</p>
+        </div>
+        <div class="col-md-3">
+            <p>HTML</p>
+        </div>
+        <div class="col-md-3">
+            <p>CSS</p>
+        </div>
+        <div class="col-md-3">
+            <p>MySQL</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <p>JavaScript</p>
+        </div>
+        <div class="col-md-3">
+            <p>jQuery</p>
+        </div>
+        <div class="col-md-3">
+            <p>React</p>
+        </div>
+        <div class="col-md-3">
+            <p>Angular</p>
+        </div>
+      </div>
+    </div>
+    
     <!-- my work section -->
-    <section id="Work" class="work container">
-      <h2>Work</h2>
-      <p>Here are some past projects:</p>
-      <div class="work-items">
-        <img src="images/luna_computer.png" alt="Portfolio Website">
-        <img src="images/moon_wallpaper.png" alt="Portfolio Design">
-        <img src="images/sailor_v.png" alt="Portfolio">
+    <div class="work" id="Work">
+      <div class="row d-flex text-center">
+        <h1>Work</h1>
+          <p>Here are some past projects:</p>
+          <div class="col-md-4">
+            <img src="images/luna_computer.png" alt="Portfolio Website">
+          </div>
+          <div class="col-md-4">
+            <img src="images/moon_wallpaper.png" alt="Portfolio Design">
+          </div>
+          <div class="col-md-4">
+            <img src="images/sailor_v.png" alt="Portfolio">
+          </div>
       </div>
-    </section>
+    </div>
     <!-- footer & contact info -->
-    <footer id="Contact" class="contact container">
-      <h2>Contact</h2>
-      <p>Email me at <a href="mailto:mwangipatrick017@gmail.com">mwangipatrick017@gmail.com</a> or find me around the web!</p>
-      <div class="social">
-        <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://facebook.com/"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+    <div id="Contact" class="contact container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Contact</h1>
+          <p>Email me at <a href="mailto:mwangipatrick017@gmail.com">mwangipatrick017@gmail.com</a> or find me around the web!</p>
+        </div>
       </div>
-    </footer>
+      <div class="row social">
+        <div class="col-md-4">
+          <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+        </div>
+        <div class="col-md-4">
+          <a href="https://facebook.com/"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <div class="col-md-4">
+          <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
