@@ -12,15 +12,15 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="myNav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              <a class="nav-link active"href="#Home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#About">About</a>
@@ -36,8 +36,8 @@
             </li>
            
           </ul>
-          <div class="d-flex">
-            <a href="tel:0741761232"><span tel="0741761232">(+254) 0741761232</span></a>    
+          <div class="d-flex d-sm-none d-md-block">
+            <a href="tel:0741761232" class="btn btntel d-flex justify-content-center align-items-center"><span tel="0741761232">Call</span></a>    
           </div>
           
         </div>
@@ -46,7 +46,7 @@
     <!-- page header -->
     <div class="row" id="Home">
       <div class="col-md-6 header">
-          <h1>Hi! I'm <span>Patrick Mwangi</span>.</h1>
+          <h1>Hi! I'm Patrick M.</h1><br>
           <h2>I'm a Software developer who takes much delight in building the best, unique and custom software solutions.</h2>
       </div>
       <div class="col-md-6">
@@ -70,7 +70,7 @@
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class="mb-3">
-              <button class="btn btn-primary float-end">Send</button>
+              <button class="btn btnsend float-end d-flex justify-content-center align-items-center">Send</button>
             </div>
           </div>
       </div>
@@ -157,20 +157,36 @@
       <div class="row">
         <div class="col-md-12">
           <h1>Contact</h1>
-          <p>Email me at <a href="mailto:mwangipatrick017@gmail.com">mwangipatrick017@gmail.com</a> or find me around the web!</p>
+          <p>Email me at <a class="mail" href="mailto:mwangipatrick017@gmail.com">mwangipatrick017@gmail.com</a> or find me around the web!</p>
         </div>
       </div>
       <div class="row social">
-        <div class="col-md-4">
+        <div class="col">
           <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
         </div>
-        <div class="col-md-4">
+        <div class="col">
           <a href="https://facebook.com/"><i class="fab fa-facebook-square"></i></a>
         </div>
-        <div class="col-md-4">
+        <div class="col">
           <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
     </div>
   </body>
+  <script>
+    // Get the container element
+    var btnContainer = document.getElementById("myNav");
+
+    // Get all buttons with class="btn" inside the container
+    var btns = btnContainer.getElementsByClassName("nav-link");
+
+    // Loop through the buttons and add the active class to the current/clicked button
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
 </html>

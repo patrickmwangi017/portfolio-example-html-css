@@ -44,32 +44,35 @@ nav li {
 }
 
 nav a {
-  color: darkblue;
-  text-decoration: none;
+  color: #323232;
+  text-transform: uppercase;
+}
+a.nav-link.active {
+  color: #F57E20 !important;
   text-transform: uppercase;
 }
 
 nav a:hover {
-  color: deepskyblue;
-  border-bottom: 3px solid black;
+  color: #7FC242 !important;
+  /* border-bottom: 3px solid black; */
 }
 
 /* header section */
 .header {
-  background: linear-gradient(270deg, rgb(255, 255, 255), rgb(205, 237, 254));
+  background: linear-gradient(270deg, #F57E20, #7FC242);
   font-size: 25px;
   padding: 15% 10%;
 }
 
-.header h1 span {
-  color: darkblue;
+.header h1, h2 {
+  color: #fff;
   font-family: 'Poppins';                                             
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.header h1 span:hover {
-  color: palevioletred;
+.header h1, h2:hover {
+  color: #fff;
 }
 
 /* about me section */
@@ -89,17 +92,22 @@ nav a:hover {
   padding-top: 20px;
 }
 .col-md-3 p {
-  background-color: paleturquoise;
-  box-shadow: 20px 20px 1px 2px rgba(255, 214, 255, 1);
+  background-color: #7FC242;
+  box-shadow: 20px 20px 1px 2px #F57E20;
   font-size: 15px;
   margin: 35px;
   padding: 20px;
+  border-radius: 10px;
+  color: #fff;
 }
 
 /* my work  */
 .work {
-  background-color: #bdd5ff;
+  background-color: #efefef;
   padding: 70px;
+}
+.work img{
+  padding-bottom: 20px;
 }
 
 /* footer */
@@ -109,10 +117,72 @@ nav a:hover {
 }
 
 .social a {
-  color: salmon;
+  color: #F57E20;
   font-size: 65px;
 }
 
 .social a:hover {
   color: #3c778a;
+}
+.navbar-collapse {
+  background-color: #fff;
+}
+.btntel{
+  background-color: #F57E20;
+  color: #fff;
+  height: 36px;
+  width: 130px;
+  border-radius: 33px;
+  padding: 20px;
+  border: none;
+}
+.btntel:hover{
+  background-color: #F57E20;
+  color: #fff;
+  height: 36px;
+  border-radius: 33px;
+  padding: 20px;
+  border: none;
+}
+.btnsend{
+  background-color: #F57E20;
+  color: #fff;
+  height: 36px;
+  width: 130px;
+  border-radius: 10px;
+  padding: 20px;
+  border: none;
+}
+.btnsend:hover{
+  background-color: #F57E20;
+  color: #fff;
+  height: 36px;
+  border-radius: 10px;
+  padding: 20px;
+  border: none;
+}
+#Home{
+  padding-top: 80px;
+}
+.mail{
+  color: #7FC242;
+}
+@media (max-width: 992px){
+  .btntel{
+    background-color: #F57E20;
+    color: #fff;
+    height: 36px;
+    width: 100% !important;
+    border-radius: 33px;
+    padding: 20px;
+    border: none;
+  }
+  .btntel:hover{
+    background-color: #F57E20;
+    color: #fff;
+    height: 36px;
+    border-radius: 33px;
+    padding: 20px;
+    border: none;
+  }
 }
